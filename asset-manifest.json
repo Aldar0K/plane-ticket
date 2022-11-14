@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/plane-ticket/static/css/main.d763c075.css",
+    "main.js": "/plane-ticket/static/js/main.3cd377c8.js",
+    "index.html": "/plane-ticket/index.html",
+    "main.d763c075.css.map": "/plane-ticket/static/css/main.d763c075.css.map",
+    "main.3cd377c8.js.map": "/plane-ticket/static/js/main.3cd377c8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d763c075.css",
+    "static/js/main.3cd377c8.js"
+  ]
+}
