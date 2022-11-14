@@ -1,10 +1,16 @@
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+}
+
 #root {
   display: flex;
   min-height: 100%;
 
   flex-direction: column;
-
-  overflow: hidden;
 }
 
 .main {

@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+
+  width: 1000px;
+
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+
+  height: 100px;
+
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  background: #5C87DB;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.field {
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+}
+
+.label {
+  color: #FFFFFF;
+}
+
+.textField {
+  background-color: #FFFFFF;
+}
+
+.dataPicker {
+  height: 20px;
+  width: 190px;
+
+  font-size: 16px;
+
+  padding: 8px;
+}
+
+.bottom {
+  display: flex;
+  
+  padding: 25px 29px;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 0px 0px 15px 15px;
+}
+
+.error {
+  position: absolute;
+
+  bottom: -34px;
+
+  font-size: 16px;
+  color: rgb(143, 11, 11);
+}

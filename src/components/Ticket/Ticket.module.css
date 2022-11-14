@@ -1,0 +1,55 @@
+.container {
+  width: 940px;
+  height: 140px;
+
+  padding: 30px 20px;
+
+  background: #FFFFFF;
+
+  box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+  border-radius: 15px;
+}
+
+.top,
+.bottom {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+.time {
+  display: flex;
+
+  justify-content: center;
+  gap: 17px;
+
+  list-style: none;
+}
+
+.timeItem {
+  display: flex;
+  padding: 5px 10px;
+
+  width: 107px;
+  height: 34px;
+
+  justify-content: center;
+  align-items: center;
+
+  background: #FFFFFF;
+  border: 1px solid #B7BAC1;
+  border-radius: 10px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #232323;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.timeItemActive {
+  background: #DDE3EE;
+}

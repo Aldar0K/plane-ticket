@@ -8,7 +8,6 @@ import NotFoundPage from 'pages/NotFoundPage';
 const App = () => {
   return (
     <>
-      <h1>Plane Ticket App</h1>
       <Routes>
         <Route index path="/" element={<Navigate to={'/avia'} />} />
         <Route path="/avia" element={<AviaPage />} />
