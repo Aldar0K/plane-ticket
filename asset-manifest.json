@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/plane-ticket/static/css/main.7c598e96.css",
-    "main.js": "/plane-ticket/static/js/main.829e4620.js",
+    "main.css": "/plane-ticket/static/css/main.f04e5859.css",
+    "main.js": "/plane-ticket/static/js/main.517fd924.js",
     "index.html": "/plane-ticket/index.html",
-    "main.7c598e96.css.map": "/plane-ticket/static/css/main.7c598e96.css.map",
-    "main.829e4620.js.map": "/plane-ticket/static/js/main.829e4620.js.map"
+    "main.f04e5859.css.map": "/plane-ticket/static/css/main.f04e5859.css.map",
+    "main.517fd924.js.map": "/plane-ticket/static/js/main.517fd924.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c598e96.css",
-    "static/js/main.829e4620.js"
+    "static/css/main.f04e5859.css",
+    "static/js/main.517fd924.js"
   ]
 }
