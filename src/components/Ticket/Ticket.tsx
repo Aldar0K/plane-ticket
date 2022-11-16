@@ -4,6 +4,7 @@ import logoPNG from '../../assets/icons/logo.png';
 import schemaPNG from '../../assets/images/schema.png';
 import smallBagPNG from '../../assets/icons/bag-small.png';
 import bigBagPNG from '../../assets/icons/bag-big.png';
+import { convertDate } from 'utils';
 
 interface TicketProps {
   from: string;
@@ -14,6 +15,9 @@ interface TicketProps {
 
 const Ticket: FC<TicketProps> = ({ from, to, there, back }) => {
   const [time, setTime] = useState(1);
+
+  const convertedThere = convertDate(there);
+  const convertedBack = back ? convertDate(back) : null;
 
   {
     return back ? (
@@ -31,7 +35,7 @@ const Ticket: FC<TicketProps> = ({ from, to, there, back }) => {
               <div className={styles.from}>
                 <div className={styles.fromTime}>22:57</div>
                 <p className={styles.from}>{from}</p>
-                <p className={styles.from}>{there}</p>
+                <p className={styles.from}>{convertedThere}</p>
               </div>
               <div className={styles.schema}>
                 <img src={schemaPNG} alt="logo" />
@@ -39,7 +43,7 @@ const Ticket: FC<TicketProps> = ({ from, to, there, back }) => {
               <div className={styles.to}>
                 <div className={styles.toTime}>22:57</div>
                 <p className={styles.to}>{to}</p>
-                <p className={styles.to}>{there}</p>
+                <p className={styles.to}>{convertedThere}</p>
               </div>
             </div>
             <div className={styles.icons}>
@@ -63,7 +67,7 @@ const Ticket: FC<TicketProps> = ({ from, to, there, back }) => {
               <div className={styles.from}>
                 <div className={styles.fromTime}>22:57</div>
                 <p className={styles.from}>{to}</p>
-                <p className={styles.from}>{back}</p>
+                <p className={styles.from}>{convertedBack}</p>
               </div>
               <div className={styles.schema}>
                 <img src={schemaPNG} alt="logo" />
@@ -71,7 +75,7 @@ const Ticket: FC<TicketProps> = ({ from, to, there, back }) => {
               <div className={styles.to}>
                 <div className={styles.toTime}>22:57</div>
                 <p className={styles.to}>{from}</p>
-                <p className={styles.to}>{back}</p>
+                <p className={styles.to}>{convertedBack}</p>
               </div>
             </div>
             <div className={styles.icons}>
@@ -105,7 +109,7 @@ const Ticket: FC<TicketProps> = ({ from, to, there, back }) => {
                     {time === 3 && '11:20'}
                   </div>
                   <p className={styles.from}>{from}</p>
-                  <p className={styles.from}>{there}</p>
+                  <p className={styles.from}>{convertedThere}</p>
                 </div>
                 <div className={styles.schema}>
                   <img src={schemaPNG} alt="logo" />
@@ -116,7 +120,7 @@ const Ticket: FC<TicketProps> = ({ from, to, there, back }) => {
                     {time === 3 && '13:05'}
                   </div>
                   <p className={styles.from}>{to}</p>
-                  <p className={styles.from}>{there}</p>
+                  <p className={styles.from}>{convertedThere}</p>
                 </div>
               </div>
               <ul className={styles.time}>
